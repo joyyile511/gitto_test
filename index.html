@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>memUBot | AI Assistant for Multi-Platform Messaging</title>
+  <meta name="description" content="memUBot unifies Slack, Teams, Discord, Lark, Telegram and more with a proactive AI assistant that answers, automates, and retains memory across every chat.">
+  <meta property="og:title" content="memUBot – Multi-platform AI messaging assistant">
+  <meta property="og:description" content="Stay in sync across Slack, Teams, Discord, Lark, Telegram, and more with memUBot. Smart automations, memory, and unified workstreams.">
+  <meta property="og:image" content="https://placehold.co/1200x630/111827/ffffff.png?text=memUBot">
+  <meta name="twitter:card" content="summary_large_image">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#7c5dff',
+            secondary: '#22d3ee',
+            gradient: '#0f172a'
+          },
+          fontFamily: {
+            sans: ['Inter', 'system-ui', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-gradient-to-b from-gradient-start to-slate-900 text-slate-100 font-sans">
+  <div class="min-h-screen relative overflow-hidden">
+    <div class="absolute inset-0 pointer-events-none">
+      <div class="absolute -top-32 -left-24 w-96 h-96 bg-purple-500 opacity-20 blur-3xl"></div>
+      <div class="absolute top-12 right-[-4rem] w-72 h-72 bg-cyan-500 opacity-30 blur-3xl"></div>
+    </div>
+    <header class="relative z-10 max-w-6xl mx-auto px-6 py-6 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-full bg-gradient-to-br from-purple-500 to-cyan-400 flex items-center justify-center font-black text-white">mem</div>
+        <div>
+          <p class="text-xs uppercase tracking-[0.5em] text-slate-400">memUBot</p>
+          <p class="text-sm text-slate-300">AI Messaging Assistant</p>
+        </div>
+      </div>
+      <div class="flex items-center gap-4 text-sm text-slate-300">
+        <a href="#features" class="hover:text-white transition">Features</a>
+        <a href="#how-it-works" class="hover:text-white transition">How it works</a>
+        <a href="#integrations" class="hover:text-white transition">Integrations</a>
+        <a href="https://github.com/NevaMind-AI/memUBo" class="px-4 py-2 rounded-full border border-slate-700 hover:border-white transition">GitHub</a>
+      </div>
+    </header>
+
+    <main class="relative z-10 max-w-6xl mx-auto px-6 pb-20 space-y-20">
+      <section class="grid lg:grid-cols-2 gap-12 items-center">
+        <div class="space-y-8">
+          <p class="text-sm uppercase tracking-[0.6em] text-slate-400">Multi-platform intelligence</p>
+          <h1 class="text-4xl md:text-5xl font-semibold text-white leading-tight">memUBot keeps every chat in sync with a proactive AI assistant that remembers context, routes follow-ups, and automates your workflows.</h1>
+          <p class="text-lg text-slate-300 leading-relaxed">One assistant to answer Slack, Teams, Discord, Lark, Telegram, and more. memUBot listens to every platform, learns your memory, and operates with enterprise-grade privacy and compliance.</p>
+          <div class="flex flex-wrap gap-4">
+            <a href="https://github.com/NevaMind-AI/memUBo" class="bg-primary px-6 py-3 rounded-full font-semibold shadow-2xl shadow-purple-500/40 hover:bg-white hover:text-slate-900 transition">Launch memUBot</a>
+            <button class="border border-slate-700 px-6 py-3 rounded-full font-semibold hover:border-white transition">See live demo</button>
+          </div>
+          <div class="grid grid-cols-3 gap-4 text-center text-slate-200">
+            <div>
+              <p class="text-2xl font-bold text-white">9+</p>
+              <p class="text-xs uppercase tracking-[0.3em] text-slate-500">Platforms</p>
+            </div>
+            <div>
+              <p class="text-2xl font-bold text-white">26ms</p>
+              <p class="text-xs uppercase tracking-[0.3em] text-slate-500">Avg. response</p>
+            </div>
+            <div>
+              <p class="text-2xl font-bold text-white">AGPL</p>
+              <p class="text-xs uppercase tracking-[0.3em] text-slate-500">Open Source</p>
+            </div>
+          </div>
+        </div>
+        <div class="relative">
+          <div class="bg-slate-800/60 border border-slate-700 rounded-3xl p-8 shadow-2xl shadow-indigo-900/40">
+            <div class="flex items-center justify-between mb-6">
+              <p class="text-sm text-slate-400">Workspace Pulse</p>
+              <span class="text-xs text-slate-500">Live</span>
+            </div>
+            <div class="space-y-6">
+              <div class="p-4 bg-slate-900/70 rounded-2xl border border-slate-700">
+                <p class="text-sm text-slate-400">Slack #ops</p>
+                <p class="text-lg font-semibold text-white">memUBot:</p>
+                <p class="text-sm text-slate-300">"Reminder: Today’s launch deck is due at 16:30. Shall I reschedule the reminder?"</p>
+              </div>
+              <div class="p-4 bg-slate-900/70 rounded-2xl border border-cyan-500/30">
+                <p class="text-sm text-slate-400">Telegram — CEO</p>
+                <p class="text-lg font-semibold text-white">Reply Sent</p>
+                <p class="text-sm text-slate-300">"Schedule an async summary for tomorrow. Confirmed."</p>
+              </div>
+              <div class="p-4 bg-slate-900/70 rounded-2xl border border-purple-500/30">
+                <p class="text-sm text-slate-400">Teams — Product</p>
+                <p class="text-lg font-semibold text-white">Memory synced</p>
+                <p class="text-sm text-slate-300">"Context restored: onboarding plan + pricing deck."</p>
+              </div>
+            </div>
+          </div>
+          <div class="absolute -bottom-10 right-8 bg-gradient-to-r from-cyan-400/20 to-purple-500/20 rounded-3xl backdrop-blur-lg border border-white/10 p-5 w-64">
+            <p class="text-xs uppercase tracking-[0.3em] text-slate-400">Always listening</p>
+            <p class="text-sm text-slate-200">Auto sync between platforms & teams.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="features" class="space-y-8">
+        <div class="flex items-center justify-between">
+          <div>
+            <p class="text-sm uppercase tracking-[0.4em] text-slate-500">Capabilities</p>
+            <h2 class="text-3xl font-semibold text-white">Design your daily flow once — memUBot automates replies, escalations, and memory leaks.</h2>
+          </div>
+          <span class="text-sm text-slate-400">AI + automation</span>
+        </div>
+        <div class="grid md:grid-cols-2 gap-6">
+          <article class="p-6 bg-slate-900/80 border border-slate-800 rounded-3xl backdrop-blur-3xl shadow-lg">
+            <p class="text-sm text-slate-400">Unified context</p>
+            <h3 class="text-2xl font-semibold text-white mt-2">Memory escapes every channel</h3>
+            <p class="text-slate-300 mt-3">memUBot stores context snapshots, meaning your AI assistant can pick up a conversation from Slack, jump into Teams, and still remember who owes the report.</p>
+          </article>
+          <article class="p-6 bg-slate-900/80 border border-slate-800 rounded-3xl backdrop-blur-3xl shadow-lg">
+            <p class="text-sm text-slate-400">Multi-platform intelligence</p>
+            <h3 class="text-2xl font-semibold text-white mt-2">Bridge 9+ platforms in parallel</h3>
+            <p class="text-slate-300 mt-3">Slack, Teams, Discord, Lark, Telegram, WhatsApp, SMS, and any webhook-based channel can receive the same AI assistant voice, templates, and approvals.</p>
+          </article>
+          <article class="p-6 bg-slate-900/80 border border-slate-800 rounded-3xl backdrop-blur-3xl shadow-lg">
+            <p class="text-sm text-slate-400">Autonomous workflows</p>
+            <h3 class="text-2xl font-semibold text-white mt-2">Automate repetitive tasks</h3>
+            <p class="text-slate-300 mt-3">Create rules that auto-acknowledge alerts, summarize threads, or follow up with stakeholders while you focus on decisions.</p>
+          </article>
+          <article class="p-6 bg-slate-900/80 border border-slate-800 rounded-3xl backdrop-blur-3xl shadow-lg">
+            <p class="text-sm text-slate-400">Secure & extensible</p>
+            <h3 class="text-2xl font-semibold text-white mt-2">Deploy on-prem or in the cloud</h3>
+            <p class="text-slate-300 mt-3">Electron desktop controls plus Next.js portal give you visibility, while AGPL licensing and telemetry controls keep compliance intact.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="how-it-works" class="space-y-8">
+        <p class="text-sm uppercase tracking-[0.4em] text-slate-400">How memUBot works</p>
+        <div class="grid md:grid-cols-3 gap-6 text-sm">
+          <div class="bg-slate-900/70 border border-slate-800 rounded-3xl p-6 space-y-3">
+            <p class="text-2xl font-semibold text-white">1</p>
+            <h3 class="text-xl font-semibold text-white">Connect every channel</h3>
+            <p class="text-slate-300">Install the agent on Slack, Teams, Discord, Lark, Telegram, and custom webhooks. memUBot keeps a single identity across platforms.</p>
+          </div>
+          <div class="bg-slate-900/70 border border-slate-800 rounded-3xl p-6 space-y-3">
+            <p class="text-2xl font-semibold text-white">2</p>
+            <h3 class="text-xl font-semibold text-white">Craft context & memory</h3>
+            <p class="text-slate-300">Define who memUBot listens to, how it summarizes conversations, and what it remembers for next time.</p>
+          </div>
+          <div class="bg-slate-900/70 border border-slate-800 rounded-3xl p-6 space-y-3">
+            <p class="text-2xl font-semibold text-white">3</p>
+            <h3 class="text-xl font-semibold text-white">Automate and escalate</h3>
+            <p class="text-slate-300">Use triggers, templated replies, and human-in-the-loop approvals so memUBot can handle routine messaging autonomously.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="integrations" class="space-y-8">
+        <div class="flex items-center justify-between">
+          <div>
+            <p class="text-sm uppercase tracking-[0.4em] text-slate-500">Integrations</p>
+            <h2 class="text-3xl font-semibold text-white">All of your platforms, one AI assistant.</h2>
+          </div>
+          <span class="text-sm text-slate-400">Webhook ready</span>
+        </div>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+          <div class="p-5 bg-slate-900/70 border border-slate-800 rounded-2xl text-sm text-slate-200">
+            <p class="text-sm text-slate-400">Enterprise</p>
+            <p class="text-xl text-white font-semibold">Slack</p>
+            <p class="text-slate-400">Threads, channels, huddles, and apps.</p>
+          </div>
+          <div class="p-5 bg-slate-900/70 border border-slate-800 rounded-2xl text-sm text-slate-200">
+            <p class="text-sm text-slate-400">Global</p>
+            <p class="text-xl text-white font-semibold">Teams</p>
+            <p class="text-slate-400">Cross-region policy awareness.</p>
+          </div>
+          <div class="p-5 bg-slate-900/70 border border-slate-800 rounded-2xl text-sm text-slate-200">
+            <p class="text-sm text-slate-400">Community</p>
+            <p class="text-xl text-white font-semibold">Discord</p>
+            <p class="text-slate-400">Bot moderation + thread summaries.</p>
+          </div>
+          <div class="p-5 bg-slate-900/70 border border-slate-800 rounded-2xl text-sm text-slate-200">
+            <p class="text-sm text-slate-400">Messaging</p>
+            <p class="text-xl text-white font-semibold">Telegram</p>
+            <p class="text-slate-400">Secure, encrypted DM handling.</p>
+          </div>
+          <div class="p-5 bg-slate-900/70 border border-slate-800 rounded-2xl text-sm text-slate-200">
+            <p class="text-sm text-slate-400">Automation</p>
+            <p class="text-xl text-white font-semibold">Webhook API</p>
+            <p class="text-slate-400">Connect anything via REST.</p>
+          </div>
+          <div class="p-5 bg-slate-900/70 border border-slate-800 rounded-2xl text-sm text-slate-200">
+            <p class="text-sm text-slate-400">Desktop</p>
+            <p class="text-xl text-white font-semibold">Electron</p>
+            <p class="text-slate-400">Local controller for workflows.</p>
+          </div>
+          <div class="p-5 bg-slate-900/70 border border-slate-800 rounded-2xl text-sm text-slate-200">
+            <p class="text-sm text-slate-400">AI</p>
+            <p class="text-xl text-white font-semibold">Anthropic + OpenAI</p>
+            <p class="text-slate-400">Fine-grained policies per channel.</p>
+          </div>
+          <div class="p-5 bg-slate-900/70 border border-slate-800 rounded-2xl text-sm text-slate-200">
+            <p class="text-sm text-slate-400">Telemetry</p>
+            <p class="text-xl text-white font-semibold">Observability</p>
+            <p class="text-slate-400">OTel-compatible tracing.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="space-y-6">
+        <div class="flex items-center justify-between">
+          <div>
+            <p class="text-sm uppercase tracking-[0.4em] text-slate-500">Call to action</p>
+            <h2 class="text-3xl font-semibold text-white">Ready to unify your conversations?</h2>
+          </div>
+          <span class="text-sm text-slate-400">Open source + free tier</span>
+        </div>
+        <div class="flex flex-wrap gap-4">
+          <a href="https://github.com/NevaMind-AI/memUBo" class="bg-gradient-to-r from-cyan-400 to-purple-500 px-8 py-4 rounded-full font-semibold text-slate-900 shadow-2xl shadow-cyan-500/40 hover:translate-y-0.5 transition">Get memUBot</a>
+          <a href="https://discord.gg/fFE4gfMvKf" class="border border-slate-600 px-8 py-4 rounded-full font-semibold text-slate-100 hover:border-white transition">Join the community</a>
+          <button class="px-6 py-4 bg-slate-800 border border-slate-700 rounded-full text-sm text-slate-400 hover:border-white">Request a walkthrough</button>
+        </div>
+        <div class="text-sm text-slate-400">Install and configure by cloning the repo, running <code>npm install</code>, then opening the Electron control panel to connect your platforms. Advanced teams can deploy memUBot on premises or in the cloud with the same AGPL-3.0-only core.</div>
+      </section>
+    </main>
+    <footer class="relative z-10 max-w-6xl mx-auto px-6 py-10 border-t border-slate-800 text-sm text-slate-500">
+      <div class="flex flex-col md:flex-row items-center justify-between gap-4">
+        <p>© 2024 memUBot. Built by NevaMind.AI · AGPL-3.0-only.</p>
+        <div class="flex gap-5">
+          <a href="https://discord.gg/fFE4gfMvKf" class="hover:text-white">Discord</a>
+          <a href="https://x.com/memU_ai" class="hover:text-white">X (Twitter)</a>
+          <a href="https://github.com/NevaMind-AI/memUBo" class="hover:text-white">GitHub</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
